@@ -275,10 +275,7 @@ yarn compile
 
 > ⚠️ The `compile` script simply runs `tsc`, a command given to us by a `typescript` installation. Similarly to `ts-node`, it currently looks up a local installation of `typescript` in your `node_modules`. If you'd like to be able to run `tsc` directly in your terminal, you'll need a global installation of `typescript`: `yarn global add typescript`
 
-After you run this, you should see a `build` folder appear, with the following two files:
-
-- `index.js` - this is ordinary JavaScript
-- `index.js.map` - this is a [source map](https://stackoverflow.com/questions/17493738/what-is-a-typescript-map-file), which you don't need to worry about or read
+After you run this, you should see a `build` folder appear, with the following file, `index.js`, which is ordinary JavaScript.
 
 > ⚠️ Our `.gitignore` lists the directory `build` - it is common practice to ignore any compiled JavaScript, and only track the TypeScript code in version control. `dist` is also listed - `build` and `dist` are the most common folders that developers use for compiling down TypeScript into JavaScript. This can be configured through your `tsconfig.json`, in the `outDir` option.
 
