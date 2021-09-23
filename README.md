@@ -253,7 +253,7 @@ Let's fix this by reading the correct property name:
 const area = rectangle.width * rectangle.height;
 ```
 
-### Running the code
+### Running the code
 
 Now, when you run the code with `yarn start:ts`, the code will give much more sensible output than our original buggy and strange JavaScript!
 
@@ -289,7 +289,7 @@ And you'll see the output.
 
 It will probably be helpful here to add a convenience script for this to `package.json`, e.g.:
 
-```json
+```
 "scripts": {
   // other scripts from before, then
   "start:build": "node build"
@@ -317,7 +317,7 @@ But, we could compile into an older version (e.g. for legacy browser support - o
 
 Go into `tsconfig.json`, and change the `target` to `"es3"`:
 
-```json
+```
 {
   "compilerOptions": {
     // other options
