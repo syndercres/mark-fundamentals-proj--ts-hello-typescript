@@ -145,7 +145,7 @@ If you hover over each of these in VS Code, you'll see some helpful error messag
 
 In other words - TypeScript is anticipating each of the strange and annoying quirks that we saw before!
 
-We've installed `node` - this runs JavaScript files. Note that it will run a file as though it were JavaScript regardless of the file extension - if you change the file extension on `src/javascript/index.js` to `.py` or `.ts` and run it using `node src/javascript/index.py` or `node src/javascript/index.py` it would still run using JavaScript and give the same results (regardless of all the error highlighting on VS Code as the editor determines the language via the file extension). Remember to change the file extension back after experimenting. 
+We've installed `node` - this runs JavaScript files. Note that it will run a file as though it were JavaScript regardless of the file extension - if you change the file extension on `src/javascript/index.js` to `.py` or `.ts` and run it using `node src/javascript/index.py` or `node src/javascript/index.ts` it would still run using JavaScript and give the same results (regardless of all the error highlighting on VS Code as the editor determines the language via the file extension). Remember to change the file extension back after experimenting. 
 
 To run files via the terminal using TypeScript, we'll (for now) use a library called [`ts-node`](https://github.com/TypeStrong/ts-node).
 
